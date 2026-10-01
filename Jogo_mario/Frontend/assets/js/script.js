@@ -28,7 +28,7 @@ const loop = setInterval(() => {
     mario.style.left = `${marioposit}px`;
 
     nuvem.style.animation = "none"
-    nuvem.style.left = `${nuvemposit}px`
+    nuvem.style.left = `${nuvemposit}`
 
     mario.src = "./assets/images/game-over.png";
     mario.style.width = '75px';
