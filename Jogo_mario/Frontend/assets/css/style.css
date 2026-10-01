@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(rgb(57, 232, 30), rgb(0, 0, 0) );
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Área em que o jogo ocorre*/
+.joguin{
+  width: 100%;
+  background-color: rgb(104, 212, 255);
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.cano{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -100px;
+    animation: cano-animation 2s infinite linear;
+}
+
+.nuvem{
+    position: absolute;
+    width: 500px;
+    right: 50px;
+    animation: nuvens-movimento 10s infinite linear;
+}
+.mario{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+.pulo{
+    animation: pulo 600ms ease-out;
+}
+/*Movimento do cano*/
+@keyframes cano-animation{
+    from{
+        right: -500px;
+    }
+
+    to{
+        right: 100%;
+
+    }
+}
+/*Pulo do Mário*/
+@keyframes pulo{
+    0%{
+        bottom: 0;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60%{
+        bottom: 160;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+/*Movimento das nuvens*/
+@keyframes nuvens-movimento{
+
+    from{
+        right: 0;
+    }
+    to{
+        right: 100%;
+    }
+
+}
