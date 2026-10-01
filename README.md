@@ -18,7 +18,7 @@ Desenvolver um jogo simples utilizando ferramentas de desenvolvimento web. E apl
 ### Clone o repositório e acesse a pasta do projeto:
 
 ```bash
-git clone https://github.com/ricardoandrade87/Jogo_mario.git
+https://github.com/ricardoandrade87/Jogo_mario.git
 cd Jogo_mario
 ```
 ## Execução
